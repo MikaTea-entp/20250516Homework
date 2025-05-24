@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>円周率シミュレーター</h1>
+    <p>モンテカルロ法を用いると、以下のように円周率をシミュレーションすることができます。</p>
+    <p>方法は以下の通りです。</p>
+    <p>まず、1辺の長さが1の正方形の中に、1/4円を描きます。</p>
+    <p>次に、正方形内にランダムな点をプロットしていきます。</p>
+    <p>原点からの距離が1未満なら円の中ですので、全ての点のうち、この条件を満たす点の数の割合を求めます。</p>
+    <p>これが1/4円の面積と同じになりますので、これを4倍すると、円周率が求まります。</p>
+<br>
+    <!-- いくつ点をプロットするか指定させる欄 -->
+    <p>プロットする点の数を指定してください：</p>
+    <!-- 入力欄 -->
+    <label for="numPoints">点の数：</label>
+    <input type="number" id="numPoints" value="1000">
+    <!-- ボックスを作る -->
+<br>    
+    <!-- シミュレーション開始ボタン -->
+    <p>このシミュレーションを行うために、以下のボタンを押してください。</p>
+    <button id="a">Simulation Start</button>
+
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid black;" class="canvas"></canvas>
+
+
+        <!-- 自分が作成したjsのコードよりも上にjQueryのCDNを貼り付ける！！ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- script srcはbodyに入れることが推奨される -->
+    <script src="js/test.js"></script>
+</body>
+</html>
