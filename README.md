@@ -10,8 +10,7 @@ JavaScript応用課題：Canvasを用いた円周率シミュレーターの作�
 (This is a browser-based application that approximates the value of π (pi) using a probabilistic algorithm called the Monte Carlo method. It randomly plots points within a square and estimates π based on the proportion that fall inside a quarter-circle. The use of Canvas enables real-time visualization, making the simulation process easy to grasp.)
 
 ## ③ アプリのデプロイURL
-https://[your-deploy-url].vercel.app
-(Replace with your actual deployment URL)
+https://mikatea-entp.github.io/20250516Homework/
 
 ## ④ アプリのログイン用IDまたはPassword（ある場合）
 なし（このアプリはログイン不要で誰でも使用できます）
